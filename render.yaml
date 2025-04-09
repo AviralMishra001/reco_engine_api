@@ -3,7 +3,9 @@ services:
     name: shl-flask-api
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install --no-cache-dir numpy
+      pip install --no-cache-dir -r requirements.txt
     startCommand: python api.py
     envVars:
       - key: PORT
