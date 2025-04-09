@@ -61,6 +61,11 @@ def recommend():
 
     return jsonify({"recommendations": recommendations})
 
+@app.route("/", methods=["GET"])
+def home():
+    return "✅ SHL Recommendation API is running."
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5001))  
     app.run(debug=False, host="0.0.0.0", port=port)
