@@ -56,7 +56,7 @@ def recommend():
             "Test Type": metadata.get("Test Type", ""),
             "Duration": metadata.get("Duration", ""),
             "Remote Testing": metadata.get("Remote Testing", ""),
-            "URL": metadata.get(" URL", "").strip()
+            "URL": metadata.get("URL", "").strip()
         })
 
     return jsonify({"recommendations": recommendations})
