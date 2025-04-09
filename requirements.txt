@@ -7,3 +7,4 @@ torch==2.0.1
 requests
 beautifulsoup4
 huggingface_hub==0.19.4
+numpy
