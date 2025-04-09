@@ -2,6 +2,7 @@ import os
 from flask import Flask, request, jsonify
 from sentence_transformers import SentenceTransformer
 import chromadb
+import numpy
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 import re
 import requests
